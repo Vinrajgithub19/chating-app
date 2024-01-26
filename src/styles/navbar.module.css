@@ -1,0 +1,47 @@
+.nav{
+    padding-left: 999px;
+    background: #6200ee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-style: normal;
+  font-size: large;
+}
+.leftDiv{
+    margin: 4px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.nav .RightDiv{
+    display: flex;
+    align-items: center;
+}
+.nav .user{
+    display: flex;
+    align-items: center;
+}
+.nav .navLink ul{
+    display: flex;
+    list-style-type:none;
+    }
+.nav .navLink ul li{
+padding: 0 4px;
+}
+.nav .navLink ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav .navLink ul li a:hover{
+text-decoration:underline;
+}
+.nav .navLink ul li:hover{
+    cursor: pointer;
+}
+.nav .userDp{
+    height: 38px;
+    justify-content: center;
+    display: flex;
+    padding: 6px;
+}
