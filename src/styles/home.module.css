@@ -155,6 +155,91 @@
   width: 80%;
   margin: 0 auto;
 }
-.home .posts-list {
-  flex-grow: 0.8;
+
+.home .postslist {
+ display: flex;
+  flex-direction: column;
+  flex-grow:0.8;
 }
+
+.friendslist{
+  text-align: center;
+  margin-left: 80px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  height: 50vh;
+  overflow-y: scroll;
+   flex-grow: 0.2;
+   box-sizing: border-box;
+}
+.friendslist .header {
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: 600;
+  font-size: 16px;
+  color: #424242;
+  padding: 20px;
+}
+.friendslist .friendsImg img {
+  height: 40px;
+}
+.friendsItem {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  color: #616161;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+}
+.friendsItem hover{
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+/*  create post styles  starts         */
+.newpostcontainer{
+box-sizing: border-box;
+border: 1px solid  #e0e0e0;
+}
+.newpostcontainer div {
+  padding: 10px;
+  border-top: 1px solid #d0d0d0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.textarea{
+ border :.5px solid red;
+ height: 50px;
+box-sizing: border-box; 
+width: 100%;
+ border: none;
+  resize: none;
+}
+.addpostbtn{
+  margin-top: 10px;
+   color: #fff;
+   border-radius:4px;
+   font-size: 16px;
+  border: none;
+  background: #ef7917;
+  
+  width: 112px;
+  height: 42px;
+  left: 111.5px;
+  top: 0px;
+
+}
+.addpostbtn:focus,
+.newpostcontainer textarea:focus{
+  outline: none;
+}
+.addpostbtn:hover{
+  cursor: pointer;
+}
+
+  
+

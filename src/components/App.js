@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import {getPosts} from '../Api';
 import {Home,Login,Signup,Settings, Userprofile} from '../pages';
-import { Navbar, Loader } from './';
+import { Navbar, Loader} from './';
 import{BrowserRouter, Redirect, Route, Switch} from 'react-router-dom';
 import { useAuth } from '../hooks';
 
@@ -81,6 +81,7 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
+
     </div>
   );
 }
