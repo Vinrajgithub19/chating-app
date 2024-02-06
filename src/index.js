@@ -5,16 +5,20 @@ import {App} from './components';
 import reportWebVitals from './reportWebVitals';
 import {ToastProvider} from 'react-toast-notifications';
 import { AuthProvider } from './providers/AuthProvider';
+import { PostProvider } from './providers/postProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
+  <PostProvider>
     <AuthProvider>
-      <ToastProvider autoDismiss={true} autoDismissTimeout={5000} placement="top-left"> 
-      <App />
+      <ToastProvider
+        autoDismiss={true}
+        autoDismissTimeout={5000}
+        placement="top-left">
+        <App />
       </ToastProvider>
     </AuthProvider>
- 
+  </PostProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

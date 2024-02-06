@@ -3,16 +3,15 @@ import  styles from '../styles/home.module.css';
 import { useAuth } from '../hooks';
 import { Link } from 'react-router-dom';
 
-const Friendslist=()=>{
+const FriendsList=()=>{
   const auth=useAuth(); 
   const{friends=[]}=auth.user;
 
   return (
-    <div className={styles.friendslist}>
-      <div className={styles.header}>friends</div>
+    <div className={styles.friendsList}>
+      <div className={styles.header}>Friends List</div>
 
-      {friends && friends.length === 0 && <div>No friends found</div>}
-
+     
       {friends &&
         friends.map((friend) => (
           <div key={`friend-${friend._id}`}>
@@ -31,4 +30,4 @@ const Friendslist=()=>{
   );
 };
 
-export  default Friendslist ;
+export default FriendsList ;

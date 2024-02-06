@@ -76,10 +76,7 @@ const Userprofile =( )=> {
       }
       setRequestInprogress(false);
     };
-    const handleRemoveFriendClock=()=>{
-
-      
-    }
+  
   const handleAddFriendClick= async()=>{    
     setRequestInprogress(true);
 
