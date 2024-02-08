@@ -1,7 +1,7 @@
 .settings {
   display: block;
   flex-direction: column;
-  background: zz#f7f4f485;
+background-image: radial-gradient(circle, #718d93, #7f9d97, #98ac98, #b8b89d, #dac2aa);
   padding: 30px;
   border-radius: 6px;
   margin: 0 auto;
